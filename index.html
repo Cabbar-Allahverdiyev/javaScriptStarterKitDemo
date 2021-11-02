@@ -5,44 +5,44 @@
     <script src="node_modules/es6-module-loader/dist/es6-module-loader-dev.js"></script>
   </head>
   <body>
-    <div id="div"> 
+    <!-- <div id="div"> 
       <input type="text">
     <input id="numberBox" type="number"  min="10" max="50"> 
     <button id="click" onclick="validate()">send</button>
     <p id="validateText"></p>
-  </div>
+  </div> -->
 
          <script>
-          System.import('src/app.js');
-          document.getElementById("validateText").addEventListener("click",changeColor)
-          function changeColor() {
-            document.getElementById("validateText").style.backgroundColor="green";
-          }
-          function validate() {
-            let numberEntered=document.getElementById("numberBox");
+          System.import('src/function.js');
+          // document.getElementById("validateText").addEventListener("click",changeColor)
+          // function changeColor() {
+          //   document.getElementById("validateText").style.backgroundColor="green";
+          // }
+          // function validate() {
+          //   let numberEntered=document.getElementById("numberBox");
             
-            if (numberEntered.checkValidity()===false) {
-              document.getElementById("validateText").innerHTML=numberEntered.validationMessage;
-            }
-            else{
-              document.getElementById("validateText").innerHTML="OK"
-            }
-          }
+          //   if (numberEntered.checkValidity()===false) {
+          //     document.getElementById("validateText").innerHTML=numberEntered.validationMessage;
+          //   }
+          //   else{
+          //     document.getElementById("validateText").innerHTML="OK"
+          //   }
+          // }
 
-          let heading=document.createElement("h2");
-          let node=document.createTextNode("Hello cabbar");
-          heading.appendChild(node);
+          // let heading=document.createElement("h2");
+          // let node=document.createTextNode("Hello cabbar");
+          // heading.appendChild(node);
 
-          let numberBox=document.getElementById("numberBox");
-          let click=document.getElementById("click");
+          // let numberBox=document.getElementById("numberBox");
+          // let click=document.getElementById("click");
       
-          let div=document.getElementById("div");
-          div.insertBefore(heading,numberBox);
+          // let div=document.getElementById("div");
+          // div.insertBefore(heading,numberBox);
       
-          //div.removeChild(click)
-          let  salam=(function name(params) {
+          // //div.removeChild(click)
+          // let  salam=(function name(params) {
             
-          })()
+         // })()
           
       </script> 
   </body>
